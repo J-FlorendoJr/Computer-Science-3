@@ -1,0 +1,47 @@
+class Rectangle:
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
+
+    # Getter for width
+    @property
+    def width(self):
+        return self.__width
+
+    # Setter for width
+    @width.setter
+    def width(self, value):
+        if value > 0:
+            self.__width = value
+        else:
+            print("Invalid width!")
+
+    # Getter for height
+    @property
+    def height(self):
+        return self.__height
+
+    # Setter for height
+    @height.setter
+    def height(self, value):
+        if value > 0:
+            self.__height = value
+        else:
+            print("Invalid height!")
+
+
+# Create a rectangle
+rect1 = Rectangle(5, 10)
+
+print("Width:", rect1.width)
+print("Height:", rect1.height)
+print("Area:", rect1.width * rect1.height)
+
+# Change the width
+rect1.width = 20
+print("New width:", rect1.width)
+
+# Try an invalid height
+rect1.height = -5
+print("Height after invalid change:", rect1.height)
+

@@ -1,0 +1,23 @@
+class Student:
+    def __init__(self, age):
+        self.__age = age
+
+    @property
+    def age(self):
+        return self.__age
+
+    @age.setter
+    def age(self, new_age):
+        if new_age > 0:
+            self.__age = new_age
+        else:
+            print("Invalid age!")
+
+student1 = Student(14)
+
+print(student1.age)
+
+student1.age = 15
+
+print(student1.age)
+
