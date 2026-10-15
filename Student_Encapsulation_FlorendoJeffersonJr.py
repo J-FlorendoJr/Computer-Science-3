@@ -99,8 +99,7 @@ print("\nTest 5 - Grade:", student1.get_grade())
 # Why is it important to use setter methods instead
 # of allowing unrestricted modification of an
 # object's attributes?
-#
-# YOUR ANSWER: It's important because setters allow private attributes to be protected, encapsulated, and be validated.
+print("\nYOUR ANSWER: It's important because setters allow private attributes to be protected, encapsulated, and be validated.")
 #
 #
 #
@@ -112,7 +111,7 @@ print("\nTest 5 - Grade:", student1.get_grade())
 # [/] Executed all five test cases
 # [/] Verified the expected output
 # [/] Answered the reflection question
-# [ ] Saved and submitted the completed Python file
+# [/] Saved and submitted the completed Python file
 #
 # END OF ACTIVITY
 # =====================================================
